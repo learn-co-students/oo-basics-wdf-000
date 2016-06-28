@@ -1,5 +1,9 @@
 class Shoe
-  attr_accessor :brand, :color, :size, :material, :condition
+  attr_accessor :color, :size, :material, :condition
+
+  # cannot change the brand of a shoe, so we use attr_reader to
+  # only get/read the info
+  attr_reader :brand
 
   def initialize(brand)
     @brand = brand
