@@ -1,3 +1,5 @@
+require 'pry'
+
 describe 'Shoe' do
   let(:shoe) { Shoe.new("Nike") }
 
@@ -14,6 +16,7 @@ describe 'Shoe' do
     end
 
     it 'has a color' do
+
       shoe.color = "red"
       expect(shoe.color).to eq("red")
     end
@@ -42,6 +45,7 @@ describe 'Shoe' do
 
     it 'makes the shoe\'s condition new' do
       shoe.condition = "old"
+
       shoe.cobble
       expect(shoe.condition).to eq("new")
     end
